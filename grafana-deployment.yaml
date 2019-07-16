@@ -9,7 +9,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: grafana
+        name: grafana
     spec:
       containers:
       - env:
