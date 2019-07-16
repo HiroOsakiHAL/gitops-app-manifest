@@ -11,5 +11,5 @@ spec:
       - backend:
           serviceName: grafana
           servicePort: 3000
-    host: phantom.127.0.0.1.xip.io
+    host: grafana.127.0.0.1.xip.io
 
