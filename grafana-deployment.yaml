@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: grafana
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: grafana
+    spec:
+      containers:
+      - env:
+        - name: GF_SECURITY_ADMIN_PASSWORD
+          value: password
+        image: hiroosakihal/gitops-app-test:d876471af502790f40743aece03ccb626942268e
+        name: grafana
+        ports:
+        - containerPort: 3000
+        resources: {}
+      restartPolicy: Always
+      imagePullSecrets:
+      - name: regcred
+status: {}

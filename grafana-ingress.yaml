@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: grafana
+  annotations:
+    ingress.kubernetes.io/force-ssl-redirect: "false"
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: grafana
+          servicePort: 3000
+    host: phantom.127.0.0.1.xip.io
+
