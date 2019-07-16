@@ -5,11 +5,14 @@ metadata:
 spec:
   replicas: 1
   strategy: {}
+  selector:
+    matchLabels:
+      app: grafana
   template:
     metadata:
       creationTimestamp: null
       labels:
-        name: grafana
+        app: grafana
     spec:
       containers:
       - env:
