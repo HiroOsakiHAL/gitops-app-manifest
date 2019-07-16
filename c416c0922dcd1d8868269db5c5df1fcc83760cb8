@@ -1,0 +1,1 @@
+{"jobID":"e6e54003-023f-a561-5aa8-83d7305445cb","spec":{"type":"policy","cause":{"Message":"","User":"Hiroyuki Osaki \u003chiroyuki.osaki@gmail.com\u003e"},"spec":{"default:deployment/grafana":{"add":{"automated":"true"},"remove":null}}},"result":null}
