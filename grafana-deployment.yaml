@@ -19,7 +19,7 @@ spec:
       - env:
         - name: GF_SECURITY_ADMIN_PASSWORD
           value: password
-        image: hiroosakihal/gitops-app-test:57ff1a0167e6ff27dec1a3b85e61264810e66a97
+        image: hiroosakihal/gitops-app-test:52120de6b7965b3753fce3953d99fe9d8e6f80ab
         name: grafana
         ports:
         - containerPort: 3000
